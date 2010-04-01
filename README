@@ -1,0 +1,9 @@
+NeXT Hacks
+----------
+
+This repo contains a few hacks for NeXT's NEXTSTEP and OPENSTEP operating systems.
+
+
+
+uname.c:	An implementation of uname(1)
+
