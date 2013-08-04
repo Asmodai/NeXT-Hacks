@@ -3,7 +3,7 @@ NeXT Hacks
 
 This repo contains a few hacks for NeXT's NEXTSTEP and OPENSTEP operating systems.
 
-
-
 uname.c:	An implementation of uname(1)
+cut.c:          A port of BSD's cut(1)
+printf.c:       A port of 4.4BSD's printf(1)
 
