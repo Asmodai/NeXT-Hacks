@@ -81,15 +81,17 @@ warnx(const char *fmt, ...)
 
 #define PF(f, func)                             \
   {                                             \
-    if (fieldwidth)                             \
-      if (precision)                            \
+    if (fieldwidth) {                           \
+      if (precision) {                          \
         printf(f, fieldwidth, precision, func); \
-      else                                      \
+      } else {                                  \
         printf(f, fieldwidth, func);            \
-    else if (precision)                         \
+      }                                         \
+    } else if (precision) {                     \
       printf(f, precision, func);               \
-    else                                        \
+    } else {                                    \
       printf(f, func);                          \
+    }                                           \
   }
 
 static int     asciicode(void);
